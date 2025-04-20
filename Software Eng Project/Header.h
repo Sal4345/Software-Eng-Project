@@ -20,8 +20,4 @@ private:
 	string UserAccessLevel;
 
 }
-
-
-User::string getUsername() {
-
-};
+;

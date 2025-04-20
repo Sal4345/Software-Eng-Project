@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Header.cpp">
+    <ClCompile Include="Header.h">
       <Filter>Header Files</Filter>
     </ClCompile>
     <ClCompile Include="Main Program.cpp">
