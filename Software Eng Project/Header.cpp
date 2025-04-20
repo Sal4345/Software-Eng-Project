@@ -24,4 +24,4 @@ private:
 
 User::string getUsername() {
 
-}
+};
