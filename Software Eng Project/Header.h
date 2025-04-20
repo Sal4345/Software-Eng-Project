@@ -19,5 +19,16 @@ private:
 	string UserID;
 	string UserAccessLevel;
 
-}
-;
+};
+
+
+class UserInterface
+{
+public: 
+	void displayLoginPage();
+	void displayAdminPage();
+	void displayEmployeePage();
+
+private:
+	int userInput;
+};
