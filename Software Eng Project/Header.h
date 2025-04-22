@@ -22,13 +22,3 @@ private:
 };
 
 
-class UserInterface
-{
-public: 
-	void displayLoginPage();
-	void displayAdminPage();
-	void displayEmployeePage();
-
-private:
-	int userInput;
-};

@@ -135,6 +135,7 @@
     <ClInclude Include="..\..\..\..\Desktop\SWE Project\SWE_Project\AccessControlSystem.h" />
     <ClInclude Include="AccessLog.h" />
     <ClInclude Include="AccessLogEntry.h" />
+    <ClInclude Include="UserInterface.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
