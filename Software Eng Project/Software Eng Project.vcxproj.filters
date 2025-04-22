@@ -29,5 +29,11 @@
     <ClInclude Include="..\..\..\..\Desktop\SWE Project\SWE_Project\AccessControlSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AccessLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AccessLogEntry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

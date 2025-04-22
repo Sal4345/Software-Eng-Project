@@ -1,4 +1,6 @@
 #include "Header.h"
+#include "AccessLog.h"
+#include "AccessLogEntry.h"
 #include <iostream>
 using namespace std;
 
