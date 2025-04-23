@@ -135,32 +135,58 @@ User::User() {} // default constructor
 
 // User Class Implementation
 
-std::string User::getUsername() { // Pulls object username  - Salih Azaz 4/22/2025
-
+std::string User::getUsername(const std::string& username) { // Pulls object username  - Salih Azaz 4/22/2025
+    cout << "Your username is: ";
     return username; 
 }
 
 void User::setUsername() {     // Modifies object username - Salih Azaz 4/22/2025
+    cout << "Please input the username: ";
     cin >> username;
 }
 
-std::string User::getUserID() { // Pulls object UserID - Salih Azaz 4/22/2025
+std::string User::getUserID(const std::string& UserID) { // Pulls object UserID - Salih Azaz 4/22/2025
+    cout << "Your UserID is:";
     return UserID;
 }
 
 void User::setUserID() {   // Modifies object UserID - Salih Azaz 4/22/2025
+    cout << "Please input the User ID: ";
     cin >> UserID;
 }
 
-std::string User::getUserAccessLevel() {
+std::string User::getUserAccessLevel(const std::string& Username, const std::string UserID, const std::string& level) {   //Pulls object access level - Salih Azaz 4/22/2025
+    cout << "The access level is:";
+    return level;
 
+}
+
+void User::setUserAccessLevel() { // Modifies object access level - Salih Azaz 4/22/2025
+    cout << "Please input the Access Level: ";
+    cin >> level;
+}
+
+bool User::isUserRegistered() {              // verifies if user registration has been completed
+                                                             // Salih Azaz 4-22-2025
+    if (username != "" && UserID != "" && level != "")
+        cout << "This user is registered. " << endl;
+    else
+        cout << "This user either has not registered or has not completed the registration process" << endl;
+
+}
+
+void User::setPassword() {
+    cout << "Please enter the password: ";            // sets object password -  Salih Azaz 4/22/2025
+    cin >> password;
+}
+
+std::string User::getPassword(const std::string& password) {   // retrieves object password - Salih Azaz 4/22/2025
+    cout << "The password is: ";
+    return password;
 }
 
 //---------main-------------------------
 int main() {
-	cout << "Access Control Program V.10" << endl;                                                          // Salih Azaz (4/20/2025)
-	cout << "Welcome! Please type the number of the option you wish to select: " << endl;                   // UI for Access Control Program
-	cout << "1. login Menu\n" << "2. Admin Menu\n" << "3. Employee Menu\n";
 																
 	
 }
