@@ -13,7 +13,7 @@ using namespace std;
 
 // --- Custom Header Includes ---
 // Include all the class definition header files
-#include "Header.h"
+#include "User.h"
 #include "AccessLog.h"
 #include "AccessLogEntry.h"
 #include "UserInterface.h"
@@ -129,6 +129,32 @@ void AccessLog::displayUserLogs(const string& userID) const {
     cout << "-----------------------------------\n";
 }
 
+//Salih Azaz 4/22/2025
+
+User::User() {} // default constructor
+
+// User Class Implementation
+
+std::string User::getUsername() { // Pulls object username  - Salih Azaz 4/22/2025
+
+    return username; 
+}
+
+void User::setUsername() {     // Modifies object username - Salih Azaz 4/22/2025
+    cin >> username;
+}
+
+std::string User::getUserID() { // Pulls object UserID - Salih Azaz 4/22/2025
+    return UserID;
+}
+
+void User::setUserID() {   // Modifies object UserID - Salih Azaz 4/22/2025
+    cin >> UserID;
+}
+
+std::string User::getUserAccessLevel() {
+
+}
 
 //---------main-------------------------
 int main() {

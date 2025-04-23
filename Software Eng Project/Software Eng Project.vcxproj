@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\Desktop\SWE Project\SWE_Project\AccessControlSystem.cpp" />
-    <ClCompile Include="Header.h" />
+    <ClCompile Include="User.h" />
     <ClCompile Include="Main Program.cpp" />
   </ItemGroup>
   <ItemGroup>
