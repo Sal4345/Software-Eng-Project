@@ -1,5 +1,5 @@
 /* Artifact: AccessControlSystem
-   Description: Manages user login, access checking, and door control
+   Description: Implements login checks and door actions
    Who wrote: Mitchell Nasser
    Date: 4-22-2025 
 */
