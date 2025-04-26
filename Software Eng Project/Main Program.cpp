@@ -141,20 +141,20 @@ std::string User::getUsername(const std::string& username) { // Pulls object use
     return username; 
 }
 
-void User::setUsername() {     // Modifies object username - Salih Azaz 4/22/2025
+/*void User::setUsername() {     // Modifies object username - Salih Azaz 4/22/2025
     cout << "Please input the username: ";
     cin >> username;
-}
+}   */
 
 std::string User::getUserID(const std::string& UserID) { // Pulls object UserID - Salih Azaz 4/22/2025
     cout << "Your UserID is:";
     return UserID;
 }
 
-void User::setUserID() {   // Modifies object UserID - Salih Azaz 4/22/2025
-    cout << "Please input the User ID: ";
+/*void User::setUserID() {   // Modifies object UserID - Salih Azaz 4/22/2025
+    cout << "Please input the User ID: ";   - Isaac already has this, commenting for now
     cin >> UserID;
-}
+}  */
 
 std::string User::getUserAccessLevel(const std::string& Username, const std::string UserID, const std::string& level) {   //Pulls object access level - Salih Azaz 4/22/2025
     cout << "The access level is:";
@@ -162,10 +162,10 @@ std::string User::getUserAccessLevel(const std::string& Username, const std::str
 
 }
 
-void User::setUserAccessLevel() { // Modifies object access level - Salih Azaz 4/22/2025
-    cout << "Please input the Access Level: ";
+/* void User::setUserAccessLevel() { // Modifies object access level - Salih Azaz 4/22/2025      
+    cout << "Please input the Access Level: ";   - Isaac already has this, commenting for now
     cin >> level;
-}
+} */
 
 bool User::isUserRegistered() {              // verifies if user registration has been completed
                                                              // Salih Azaz 4-22-2025
@@ -176,10 +176,10 @@ bool User::isUserRegistered() {              // verifies if user registration ha
 
 }
 
-void User::setPassword() {
+/*void User::setPassword() {
     cout << "Please enter the password: ";            // sets object password -  Salih Azaz 4/22/2025
     cin >> password;
-}
+}*/
 
 std::string User::getPassword(const std::string& password) {   // retrieves object password - Salih Azaz 4/22/2025
     cout << "The password is: ";
