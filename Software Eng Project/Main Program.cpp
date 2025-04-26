@@ -17,6 +17,7 @@ using namespace std;
 #include "AccessLog.h"
 #include "AccessLogEntry.h"
 #include "UserInterface.h"
+#include "Administrator.h"
 //#include "AccessControlSystem.h"
 //Bolivar Morales 4-22-2025
 /**
@@ -184,6 +185,52 @@ std::string User::getPassword(const std::string& password) {   // retrieves obje
     cout << "The password is: ";
     return password;
 }
+
+//Isaac Opata 4/26
+Administrator::Administrator(const string& id, const string& pass) : adminID(id), password(pass) {}
+
+bool Administrator::verifyAdminCredentials(const string& id, const string& pass) {
+    return (id == adminID && pass == password);
+}
+
+void Administrator::addUser(const string& userID, const string& username, const string& accessLevel) {
+    userList[userID] = make_pair(username, accessLevel);
+    accessLogs.push_back("User added: " + userID + ", Access Level: " + accessLevel);
+    cout << "User " << username << " added successfully." << endl;
+}
+
+void Administrator::removeUser(const string& userID) {
+    if (userList.erase(userID)) {
+        accessLogs.push_back("User removed: " + userID);
+        cout << "User " << userID << " removed successfully." << endl;
+    } else {
+        cout << "User " << userID << " not found." << endl;
+    }
+}
+
+void Administrator::modifyUserAccess(const string& userID, const string& newAccessLevel) {
+    auto it = userList.find(userID);
+    if (it != userList.end()) {
+        it->second.second = newAccessLevel;
+        accessLogs.push_back("Access modified for user: " + userID + " to " + newAccessLevel);
+        cout << "Access level for user " << userID << " updated to " << newAccessLevel << "." << endl;
+    } else {
+        cout << "User " << userID << " not found." << endl;
+    }
+}
+
+void Administrator::viewAccessLogs() {
+    cout << "Access Logs:" << endl;
+    for (const string& log : accessLogs) {
+        cout << log << endl;
+    }
+}
+
+void Administrator::initiateSystemLockdown() {
+    accessLogs.push_back("System lockdown initiated by administrator.");
+    cout << "System lockdown initiated!" << endl;
+}
+
 
 //---------main-------------------------
 int main() {
