@@ -186,7 +186,7 @@ std::string User::getPassword(const std::string& password) {   // retrieves obje
     return password;
 }
 
-//Isaac Opata -  implementing admin header
+//Isaac Opata 
 Administrator::Administrator(const string& id, const string& pass) : adminID(id), password(pass) {}
 
 bool Administrator::verifyAdminCredentials(const string& id, const string& pass) {
