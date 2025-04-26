@@ -1,3 +1,8 @@
+/* Artifact: AccessControlSystem
+   Description: Manages user login, access checking, and door control
+   Who wrote: Mitchell Nasser
+   Date: 4-22-2025 
+*/
 #ifndef ACCESS_CONTROL_SYSTEM_H
 #define ACCESS_CONTROL_SYSTEM_H
 
